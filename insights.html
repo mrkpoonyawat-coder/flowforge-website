@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-page="insights">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights — FlowForge Supply Chain Partners</title>
+  <meta name="description" content="Thought leadership on supply chain transformation, logistics optimization, transportation strategy, warehouse excellence, and operational performance from FlowForge Supply Chain Partners." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="page-fade">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-mark">FlowForge</span>
+      <span class="nav-logo-sub">Supply Chain Partners</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-home">Home</a>
+      <a href="services.html" class="nav-services">Services</a>
+      <a href="experts.html" class="nav-experts">Our Experts</a>
+      <a href="insights.html" class="nav-insights">Insights</a>
+      <a href="contact.html" class="btn btn-primary nav-cta nav-contact">Contact Us</a>
+    </div>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="nav-mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="experts.html">Our Experts</a>
+  <a href="insights.html">Insights</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="insights-hero">
+  <div class="container">
+    <div style="max-width:660px;">
+      <span class="eyebrow" style="color:var(--accent);">Thought Leadership</span>
+      <h1 style="font-family:var(--ff-display);font-size:clamp(2.4rem,5vw,4rem);font-weight:300;color:var(--white);line-height:1.1;margin-bottom:20px;">Perspectives from the <em style="font-style:italic;color:var(--accent-lt);">Field</em></h1>
+      <p style="font-size:1rem;color:rgba(255,255,255,0.6);line-height:1.85;max-width:520px;">Practical insight on supply chain transformation, logistics excellence, and operational strategy — grounded in real executive experience across Southeast Asia and APAC.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FEATURED ARTICLE ═══════════ -->
+<section class="section-sm" style="background:var(--off-white);border-bottom:1px solid var(--gray-200);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;" class="reveal">
+      <div>
+        <div style="background:var(--navy);padding:56px;position:relative;overflow:hidden;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;">
+          <div style="position:absolute;inset:0;opacity:0.07;background:repeating-linear-gradient(-45deg,transparent,transparent 30px,rgba(255,255,255,0.3) 30px,rgba(255,255,255,0.3) 31px);"></div>
+          <div style="position:absolute;top:24px;left:24px;font-family:var(--ff-mono);font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent-lt);background:rgba(13,27,42,0.5);padding:4px 12px;backdrop-filter:blur(4px);">Featured · Supply Chain Transformation</div>
+          <div style="position:relative;">
+            <h2 style="font-family:var(--ff-display);font-size:1.7rem;font-weight:400;color:var(--white);line-height:1.25;margin-bottom:12px;">Why Most Supply Chain Transformations Fail — and What Separates Those That Succeed</h2>
+            <div style="font-family:var(--ff-mono);font-size:0.62rem;letter-spacing:0.1em;color:rgba(255,255,255,0.4);">FlowForge Advisory · May 2025 · 8 min read</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">Featured Insight</span>
+        <p style="font-size:0.95rem;color:var(--gray-600);line-height:1.85;margin-bottom:20px;">Transformation programs across Southeast Asia's largest supply chains fail at a striking rate — not because of poor strategy, but because of weak execution governance, inadequate capability building, and leadership that leaves before results are embedded.</p>
+        <p style="font-size:0.95rem;color:var(--gray-600);line-height:1.85;margin-bottom:28px;">This article examines the critical success factors that distinguish transformation programs that deliver lasting value from those that deliver impressive PowerPoint decks and little else.</p>
+        <a href="#" class="btn btn-primary">Read the Article</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ARTICLES GRID ═══════════ -->
+<section class="section">
+  <div class="container">
+
+    <!-- Filter tabs -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:48px;" class="reveal">
+      <button onclick="filterInsights('all')" class="filter-btn filter-active" style="font-family:var(--ff-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;border:1px solid var(--gray-200);background:var(--navy);color:var(--white);cursor:pointer;transition:all 0.2s;">All Topics</button>
+      <button onclick="filterInsights('transformation')" class="filter-btn" style="font-family:var(--ff-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;border:1px solid var(--gray-200);background:transparent;color:var(--gray-600);cursor:pointer;transition:all 0.2s;">Transformation</button>
+      <button onclick="filterInsights('transportation')" class="filter-btn" style="font-family:var(--ff-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;border:1px solid var(--gray-200);background:transparent;color:var(--gray-600);cursor:pointer;transition:all 0.2s;">Transportation</button>
+      <button onclick="filterInsights('warehouse')" class="filter-btn" style="font-family:var(--ff-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;border:1px solid var(--gray-200);background:transparent;color:var(--gray-600);cursor:pointer;transition:all 0.2s;">Warehouse</button>
+      <button onclick="filterInsights('analytics')" class="filter-btn" style="font-family:var(--ff-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;border:1px solid var(--gray-200);background:transparent;color:var(--gray-600);cursor:pointer;transition:all 0.2s;">Analytics</button>
+      <button onclick="filterInsights('operations')" class="filter-btn" style="font-family:var(--ff-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;padding:8px 20px;border:1px solid var(--gray-200);background:transparent;color:var(--gray-600);cursor:pointer;transition:all 0.2s;">Operations</button>
+    </div>
+
+    <div class="insights-grid" id="insightsGrid" data-stagger>
+
+      <div class="insight-card reveal" data-category="transformation">
+        <div class="insight-card-img">
+          <div class="insight-card-img-pattern" style="background:repeating-linear-gradient(-45deg,rgba(255,255,255,0.4),rgba(255,255,255,0.4) 1px,transparent 1px,transparent 20px);"></div>
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0D1B2A 0%,#1A3A5C 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">SC</div>
+          <div class="insight-category">Supply Chain Transformation</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Poonyawat Kusonwattana · April 2025 · 6 min read</div>
+          <div class="insight-title">The Five Levers of Sustainable Supply Chain Cost Reduction in Southeast Asia</div>
+          <p class="insight-excerpt">Cost reduction initiatives that don't address structural root causes rarely hold. We examine the five operational levers that drive durable logistics cost improvement across SE Asian supply chains.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="transportation">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0D1B2A 0%,#243B53 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">TR</div>
+          <div class="insight-category">Transportation Optimization</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Chaiwut Leabchantra · March 2025 · 7 min read</div>
+          <div class="insight-title">Building a Carrier Management Strategy That Delivers Beyond Rate Negotiation</div>
+          <p class="insight-excerpt">Most organisations focus carrier management effort on rate negotiation. The highest-performing logistics functions go further — designing carrier partnerships, performance governance, and capacity strategies that create sustained competitive advantage.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="analytics">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1A2E44 0%,#0D1B2A 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">DA</div>
+          <div class="insight-category">Data &amp; Analytics</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Pacharawan Suebsangin · March 2025 · 5 min read</div>
+          <div class="insight-title">Why Your Supply Chain Dashboard Isn't Driving Better Decisions — and How to Fix It</div>
+          <p class="insight-excerpt">A well-designed dashboard should reduce management judgment time, not increase it. This article identifies the most common dashboard design failures and outlines principles for building supply chain visibility tools that change operational behaviour.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="warehouse">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0D1B2A 0%,#2C4A6E 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">WH</div>
+          <div class="insight-category">Warehouse Excellence</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Poonyawat Kusonwattana · February 2025 · 8 min read</div>
+          <div class="insight-title">Distribution Centre Performance: What the Best Operations Have in Common</div>
+          <p class="insight-excerpt">Across hundreds of distribution centre assessments in Southeast Asia, the highest-performing operations share five consistent characteristics. This piece distils the patterns that separate world-class warehouse operations from the rest.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="operations">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#243B53 0%,#0D1B2A 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">CI</div>
+          <div class="insight-category">Continuous Improvement</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Chaiwut Leabchantra · February 2025 · 6 min read</div>
+          <div class="insight-title">Embedding a Continuous Improvement Culture in Logistics Operations: A Practitioner's Framework</div>
+          <p class="insight-excerpt">Continuous improvement cannot be installed like software. It must be cultivated through leadership behaviour, structured routines, and empowered teams. This framework explains how to make it stick in complex, high-volume logistics environments.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="analytics">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0D1B2A 0%,#1A3A5C 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">KP</div>
+          <div class="insight-category">KPI Governance</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Pacharawan Suebsangin · January 2025 · 5 min read</div>
+          <div class="insight-title">Designing KPI Governance That Drives Accountability, Not Compliance</div>
+          <p class="insight-excerpt">KPI governance that exists primarily to satisfy management reporting requirements adds cost without value. This article outlines how to design KPI systems that change operational behaviour and accelerate supply chain improvement.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="transformation">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1A2E44 0%,#0D1B2A 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">S&amp;OP</div>
+          <div class="insight-category">S&amp;OP / IBP</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Chaiwut Leabchantra · January 2025 · 7 min read</div>
+          <div class="insight-title">S&amp;OP in Practice: Closing the Gap Between Planning Intent and Operational Reality</div>
+          <p class="insight-excerpt">Many organisations invest significantly in S&amp;OP processes that fail to close the loop between strategic plans and operational execution. This piece examines the design and governance conditions required for S&amp;OP to drive real operational alignment.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="transportation">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0D1B2A 0%,#243B53 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">XB</div>
+          <div class="insight-category">Cross-Border Logistics</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">Poonyawat Kusonwattana · December 2024 · 9 min read</div>
+          <div class="insight-title">Cross-Border Supply Chain Complexity in Southeast Asia: Navigating What the Frameworks Miss</div>
+          <p class="insight-excerpt">Standard supply chain frameworks rarely capture the full complexity of cross-border logistics in Southeast Asia — regulatory fragmentation, infrastructure variability, and the informal networks that actually move goods. A field perspective.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="insight-card reveal" data-category="operations">
+        <div class="insight-card-img">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0D1B2A 0%,#1A3A5C 100%);"></div>
+          <div style="position:relative;font-family:var(--ff-display);font-size:3rem;font-weight:300;color:rgba(176,141,87,0.3);">INV</div>
+          <div class="insight-category">Inventory Optimization</div>
+        </div>
+        <div class="insight-card-body">
+          <div class="insight-meta">FlowForge Advisory · December 2024 · 6 min read</div>
+          <div class="insight-title">Inventory Optimization in High-Complexity Supply Chains: Moving Beyond Spreadsheet Safety Stock</div>
+          <p class="insight-excerpt">Working capital trapped in excess inventory is often the most visible symptom of a deeper demand planning and supply-side governance problem. This article examines the root causes and a structured approach to sustainable inventory reduction.</p>
+          <a href="#" class="insight-read-more">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA ═══════════ -->
+<div class="cta-band">
+  <div class="container">
+    <div class="cta-band-content reveal">
+      <h2>Ready to Transform Your Operations?</h2>
+      <p>Connect with our advisory team to discuss your supply chain challenges.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-gold">Book a Consultation</a>
+        <a href="experts.html" class="btn btn-outline-white">Meet Our Experts</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="nav-logo-mark">FlowForge</span>
+          <span class="nav-logo-sub">Supply Chain Partners</span>
+        </div>
+        <p class="footer-tagline">Boutique supply chain advisory and operational transformation for multinational corporations across Southeast Asia and APAC.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Supply Chain Transformation</a></li>
+          <li><a href="services.html">Logistics Cost Reduction</a></li>
+          <li><a href="services.html">Transportation Optimization</a></li>
+          <li><a href="services.html">Warehouse Excellence</a></li>
+          <li><a href="services.html">KPI Governance</a></li>
+          <li><a href="services.html">Supply Chain Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="experts.html">Our Experts</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@flowforge-scpartners.com">info@flowforge-scpartners.com</a></li>
+          <li><a href="contact.html">Book a Consultation</a></li>
+          <li><a href="contact.html">Microsoft Teams Meeting</a></li>
+          <li><a href="contact.html">Onsite Advisory</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 FlowForge Supply Chain Partners. All rights reserved.</span>
+      <span>Bangkok &amp; Southeast Asia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  function filterInsights(category) {
+    const cards = document.querySelectorAll('.insight-card');
+    const btns = document.querySelectorAll('.filter-btn');
+    btns.forEach(b => {
+      b.style.background = 'transparent';
+      b.style.color = 'var(--gray-600)';
+      b.style.borderColor = 'var(--gray-200)';
+    });
+    event.target.style.background = 'var(--navy)';
+    event.target.style.color = 'var(--white)';
+
+    cards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+</body>
+</html>
