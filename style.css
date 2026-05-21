@@ -667,10 +667,12 @@ ul { list-style: none; }
   padding: 40px 32px 32px;
   position: relative;
   overflow: hidden;
-   min-height: 270px;
-    display: flex;
+  min-height: 270px;
+
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .expert-card-top::before {
@@ -690,13 +692,12 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--ff-display);
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--accent-lt);
-  margin-bottom: 20px;
+  overflow: hidden;
+
+  margin-bottom: 24px;
+  flex-shrink: 0;
+
   border: 2px solid rgba(176,141,87,0.3);
-   overflow: hidden;
 }
 
 .expert-avatar img {
