@@ -691,6 +691,7 @@ ul { list-style: none; }
   color: var(--accent-lt);
   margin-bottom: 20px;
   border: 2px solid rgba(176,141,87,0.3);
+   overflow: hidden;
 }
 
 .expert-avatar img {
