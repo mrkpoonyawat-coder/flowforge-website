@@ -667,6 +667,9 @@ ul { list-style: none; }
   position: relative;
   overflow: hidden;
    min-height: 270px;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .expert-card-top::before {
