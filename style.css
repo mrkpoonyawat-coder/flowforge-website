@@ -646,14 +646,15 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  margin-top: 64px;
+  align-items: stretch;
 }
 
 .expert-card {
-  border: 1px solid var(--gray-200);
   background: var(--white);
-  transition: var(--transition);
-  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .expert-card:hover {
@@ -726,6 +727,7 @@ display: block;
 
 .expert-card-body {
   padding: 28px 32px;
+   flex: 1;
 }
 
 .expert-bio {
