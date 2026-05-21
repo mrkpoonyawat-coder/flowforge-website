@@ -666,7 +666,7 @@ ul { list-style: none; }
   padding: 40px 32px 32px;
   position: relative;
   overflow: hidden;
-   min-height: 250px;
+   min-height: 270px;
 }
 
 .expert-card-top::before {
