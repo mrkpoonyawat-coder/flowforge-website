@@ -713,7 +713,7 @@ ul { list-style: none; }
   font-weight: 400;
   color: var(--white);
   margin-bottom: 4px;
-   min-height: 70px;
+   min-height: 90px;
 }
 
 .expert-title {
@@ -722,7 +722,7 @@ ul { list-style: none; }
   letter-spacing: 0.12em;
   color: var(--accent);
   text-transform: uppercase;
-   min-height: 40px;
+   min-height: 55px;
 display: block;
 }
 
