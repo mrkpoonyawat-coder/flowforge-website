@@ -667,7 +667,8 @@ ul { list-style: none; }
   padding: 40px 32px 32px;
   position: relative;
   overflow: hidden;
-  min-height: 340px;
+
+  height: 340px;
 
   display: flex;
   flex-direction: column;
@@ -714,7 +715,7 @@ ul { list-style: none; }
   font-weight: 400;
   color: var(--white);
   margin-bottom: 4px;
-   min-height: 90px;
+  min-height: 60px;
 }
 
 .expert-title {
@@ -723,7 +724,7 @@ ul { list-style: none; }
   letter-spacing: 0.12em;
   color: var(--accent);
   text-transform: uppercase;
-   min-height: 55px;
+   min-height: 38px;
 display: block;
 }
 
