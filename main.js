@@ -56,25 +56,6 @@ document.querySelectorAll('[data-stagger]').forEach(container => {
   });
 });
 
-// ─── Contact form submission ───
-const contactForm = document.getElementById('consultationForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('.form-submit');
-    const original = btn.textContent;
-    btn.textContent = 'Message Sent — We\'ll Be in Touch';
-    btn.style.background = '#2C4A6E';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.style.background = '';
-      btn.disabled = false;
-      contactForm.reset();
-    }, 4000);
-  });
-}
-
 // ─── Animate stat numbers ───
 function animateCounter(el) {
   const target = parseFloat(el.dataset.target);
