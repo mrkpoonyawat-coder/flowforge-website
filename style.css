@@ -667,7 +667,7 @@ ul { list-style: none; }
   padding: 40px 32px 32px;
   position: relative;
   overflow: hidden;
-  min-height: 270px;
+  min-height: 340px;
 
   display: flex;
   flex-direction: column;
