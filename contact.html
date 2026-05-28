@@ -116,11 +116,7 @@
         <div class="form-title">Book a Consultation</div>
         <div class="form-subtitle">Tell us about your organisation and the challenge you're looking to address. We'll be in touch within one business day.</div>
 
-        <form action="https://formspree.io/f/xredjggd"
-      method="POST">
-          <input type="hidden"
-       name="_next"
-       value="https://flowforge-scpartners.com/thankyou.html">
+        <form id="contact-form">
           
           <div class="form-row">
             <div class="form-group">
@@ -306,5 +302,28 @@
 </footer>
 
 <script src="main.js"></script>
+  <script>
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch("https://formspree.io/f/xredjggd", {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    window.location.href = "https://flowforge-scpartners.com/thankyou.html";
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+});
+</script>
 </body>
 </html>
