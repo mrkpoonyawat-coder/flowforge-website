@@ -736,6 +736,7 @@ display: block;
   color: var(--gray-600);
   line-height: 1.8;
   margin-bottom: 24px;
+   min-height: 190px;
 }
 
 .expert-highlights {
